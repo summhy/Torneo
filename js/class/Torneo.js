@@ -7,13 +7,13 @@ export function Torneo(nombre, maxEquipos, maxJugadores, minEdad ){
 }
 
 Torneo.prototype.agregarEquipo = function (equipo){
-    if(this.equipos.length < this.maxEquipos()){
-        return false
-    }
-    else    {
+    if(this.equipos.length < this.maxEquipos){
         this.equipos.push(equipo)
         return true
     }
+    else    {
+        return false
+    }       
 }
 
 Torneo.prototype.getMaxEquipos = function (){

@@ -32,16 +32,15 @@ btnCrearEquipo.addEventListener('click', event => {
     }else{
        alert('Maximo equipos superado')
     }
-    
-
-    console.log(event);
     console.log(torneo)
+
+})
+
+document.querySelector('#exportar').addEventListener('click', event => {
+    document.querySelector('#divJson').innerHTML = JSON.stringify(torneo);
 })
 
 
 
 
 
-const t = new Torneo('sdfds',1,1,1);
-console.log(t.getNombre())
-console.log(t)
