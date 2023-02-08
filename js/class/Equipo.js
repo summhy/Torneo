@@ -1,9 +1,16 @@
-export function Equipo(nombre, poblacion){
-    this.nombre = nombre
-    this.poblacion =  poblacion
-    this.jugadores=[]
+export class Equipo {
+    constructor(nombre, poblacion) {
+        this.nombre = nombre
+        this.poblacion = poblacion
+        this.jugadores = []
+    }
+    agregarJugador(jugador, maxJugador) {
+        if (this.jugadores.length < maxJugador) {
+            this.jugadores.push(jugador)
+            return true
+        }else{
+            return false
+        }
+    }
 }
 
-Equipo.prototype.agregarJugador = function (jugador){
-    this.jugadores.push(jugador)
-}

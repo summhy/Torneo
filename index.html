@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="Torneo">
+    <section id="torneo">
         <h1>Nuevo Torneo</h1>
         <input type="text" id="txtNombreTorneo" placeholder="Nombre Torneo" required>
         <input type="number" id="txtMaxEquipos" placeholder="Cantidad Max Equipos" required>
@@ -17,14 +17,31 @@
         <input type="button" value="Nuevo Torneo" id="btnCrearTorneo">
     </section>
 
-<section id="Equipo">
+<section id="equipo">
     <h1>Nuevo Equipo</h1>
     <input type="text" id="txtNombreEquipo" placeholder="Nombre Equipo" required>
     <input type="text" id="txtPoblacion" placeholder="Poblacion" required>
     <input type="button" value="Nuevo Equipo" id="btnCrearEquipo">
 </section>
-<div id="divJson"></div>
+
+
+<section id="jugadores">
+    <h1>Nuevo Jugador</h1>
+    <input type="text" id="txtRut" placeholder="Rut" required>
+    <input type="text" id="txtNombre" placeholder="Nombre" required>
+    <input type="text" id="txtApellido" placeholder="Apellido" required>
+    <input type="number" id="intNacimiento" placeholder="Año Nacimiento" required>
+    <input type="checkbox" id="ckCapitan"required> Capitan
+    <input type="button" value="Nuevo Jugador" id="btnCrearJugador">
+</section>
+
+
+<!--Exportar Json
+<div>
+    <div id="divJson"></div>
 <input type="button" value="exportar" id="exportar">
+</div>-->
+
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
